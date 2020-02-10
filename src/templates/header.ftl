@@ -8,7 +8,9 @@
 	
 		<div class="nhsuk-header__content" id="content-header">
 			<#if is_signed_in >
-					
+				<a class="nhsuk-button" href="${sign_out_url}">
+					<@liferay.language key="sign-out" />
+				</a>	
 			<#else>
 				<div class="pull-right">
 					<a class="nhsuk-button nhsuk-button--reverse nhsuk-u-margin-right-4" href="${sign_in_url}">
