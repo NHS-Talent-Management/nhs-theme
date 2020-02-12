@@ -1,3 +1,20 @@
 @import 'node_modules/nhsuk-frontend/packages/nhsuk';
 @import 'liferay-font-awesome/scss/font-awesome';
 @import 'liferay-font-awesome/scss/glyphicons';
+
+@import 'typography';
+@import 'nhsuk-overrides';
+@import 'components/communitylisting';
+
+
+body{
+    background-color: $color_nhsuk-grey-5;
+}    
+
+.portlet-layout {
+	margin-top: 1rem;
+	
+	.portlet-header {
+		margin-bottom: 0;
+	}
+}
