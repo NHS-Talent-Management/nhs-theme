@@ -1,0 +1,24 @@
+.nhsuk-button--reverse {
+	color: $nhsuk-text-color !important;
+}
+
+.nhsuk-promo__link-wrapper:hover {
+	box-shadow: 0 0 0 4px $color_nhsuk-warm-yellow;
+}
+
+.compact-mobile-view {
+	
+	.nhsuk-promo-group__item {
+		
+		@include media-breakpoint-down(md) {
+			flex-basis: auto;
+			margin-bottom: 1rem !important;
+		}
+		
+		.nhsuk-promo__content {
+			@include media-breakpoint-down(md) {
+				padding: 1rem;
+			}
+		}
+	}
+}

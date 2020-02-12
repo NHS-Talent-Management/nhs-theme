@@ -12,3 +12,12 @@ var liferayThemeTasks = require('liferay-theme-tasks');
 liferayThemeTasks.registerTasks({
 	gulp,
 });
+
+
+gulp.task('sass', function () {
+  return gulp.src('./sass/**/*.scss')
+    .pipe(sass({
+      includePaths: 'node_modules'
+     }))
+    .pipe(gulp.dest('./css'));
+});

@@ -1,9 +1,13 @@
+node
 node_modules
 build
 dist
 liferay-theme.json
+.DS_Store
+.gradle
+.project
+.settings
 .web_bundle_build
 .yo-rc.json
-/.gradle/
 /.project
 /package-lock.json
