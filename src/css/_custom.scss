@@ -18,3 +18,16 @@ body{
 		margin-bottom: 0;
 	}
 }
+
+/* Hide portlet titles on content pages */
+.layout-content.portlet-layout {
+	.portlet-content .portlet-header{
+		display: none;
+		visibility: hidden;
+	}
+}
+
+#portlet_com_pfiks_journal_portlet_JournalContentPortlet .portlet-content .portlet-header{
+	display: none;
+	visibility: hidden;
+}
