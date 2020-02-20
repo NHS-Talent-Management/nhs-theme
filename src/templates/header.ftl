@@ -18,7 +18,7 @@
 				</div>
 			<#else>
 				<div class="pull-right">
-					<a class="nhsuk-button nhsuk-button--reverse nhsuk-u-margin-right-4" href="${sign_in_url}">
+					<a class="nhsuk-button nhsuk-button--reverse nhsuk-u-margin-right-4" href="${register_url}">
 						<@liferay.language key="join-now" />
 					</a>
 					
