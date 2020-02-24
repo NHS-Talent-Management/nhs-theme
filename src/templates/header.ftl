@@ -22,7 +22,7 @@
 						<@liferay.language key="join-now" />
 					</a>
 					
-					<a class="nhsuk-button" href="${sign_in_url}">
+					<a class="nhsuk-button nhs-sign-in-modal" href="${sign_in_url}&redirect=${current_url}">
 						<@liferay.language key="log-in" />
 					</a>
 				</div>
