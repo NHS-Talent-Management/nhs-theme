@@ -1,17 +1,12 @@
 $button-shadow-size: 4px;
 
-.btn-primary, 
-.btn-primary.btn-default {
+@mixin common-btn {
 	@include nhsuk-font(19);
 	@include nhsuk-responsive-margin(5, 'bottom', $adjustment: $button-shadow-size);
 	
 	-webkit-appearance: none;
-	background-color: $nhsuk-button-color;
-	border: $nhsuk-border-width-form-element solid transparent;
 	border-radius: 4px;
-	box-shadow: 0 $button-shadow-size 0 $nhsuk-button-shadow-color;
 	box-sizing: border-box;
-	color: $nhsuk-button-text-color;
 	cursor: pointer;
 	display: inline-block;
 	font-weight: 600;
@@ -36,10 +31,7 @@ $button-shadow-size: 4px;
 	&:not(:disabled):not(.disabled).active
 	&:hover,
 	&:not(.disabled):hover {
-		color: $nhsuk-button-text-color;
 		text-decoration: none;
-		background-color: #00662f;
-		border: 2px solid transparent;
 	}
 	
 	&::-moz-focus-inner {
@@ -47,23 +39,10 @@ $button-shadow-size: 4px;
 		padding: 0;
 	}
 	
-	&:hover {
-		background-color: $nhsuk-button-hover-color;
-	}
-	
-	&:focus {
-		background: $nhsuk-focus-color;
-		box-shadow: 0 $button-shadow-size 0 $nhsuk-focus-text-color;
-		color: $nhsuk-focus-text-color;
-		outline: $nhsuk-focus-width solid transparent;
-	}
-	
 	&:active,
 	&:not(:disabled):not(.disabled):active, 
 	&:not(:disabled):not(.disabled).active {
-		background: $nhsuk-button-active-color;
 		box-shadow: none;
-		color: $nhsuk-button-text-color;
 		top: $button-shadow-size;
 	}
 	
@@ -81,10 +60,58 @@ $button-shadow-size: 4px;
 	&:active::before {
 		top: -($nhsuk-border-width-form-element + $button-shadow-size);
 	}
+}
+
+
+
+.btn-primary, 
+.btn-primary.btn-default {
+	@include common-btn;
+	
+	background-color: $nhsuk-button-color;
+	border: $nhsuk-border-width-form-element solid transparent;
+	box-shadow: 0 $button-shadow-size 0 $nhsuk-button-shadow-color;
+	color: $nhsuk-button-text-color;
+	
+	
+	&:link,
+	&:not(.disabled):link
+	&:visited,
+	&:not(.disabled):visited
+	&:active,
+	&:not(.disabled):active,
+	&:not(:disabled):not(.disabled):active, 
+	&:not(:disabled):not(.disabled).active
+	&:hover,
+	&:not(.disabled):hover {
+		color: $nhsuk-button-text-color;
+		background-color: #00662f;
+		border: 2px solid transparent;
+	}
+	
+	&:hover {
+		background-color: $nhsuk-button-hover-color;
+	}
+	
+	&:focus {
+		background: $nhsuk-focus-color;
+		box-shadow: 0 $button-shadow-size 0 $nhsuk-focus-text-color;
+		color: $nhsuk-focus-text-color;
+		outline: $nhsuk-focus-width solid transparent;
+	}
+	
+	&:active,
+	&:not(:disabled):not(.disabled):active, 
+	&:not(:disabled):not(.disabled).active {
+		box-shadow: none;
+		top: $button-shadow-size;
+	}
 
 }
 
 .btn-secondary {
+	@include common-btn;
+	
 	background-color: $nhsuk-secondary-button-color;
 	box-shadow: 0 $button-shadow-size 0 $nhsuk-secondary-button-shadow-color;
 	
@@ -101,9 +128,7 @@ $button-shadow-size: 4px;
 
 	&:active {
 		background: $nhsuk-secondary-button-active-color;
-		box-shadow: none;
 		color: $nhsuk-button-text-color;
-		top: $button-shadow-size;
 	}
 
 	&.nhsuk-button--disabled {
@@ -113,6 +138,8 @@ $button-shadow-size: 4px;
 }
 
 .btn-default {
+	@include common-btn;
+	
 	background-color: $nhsuk-reverse-button-color;
 	box-shadow: 0 $button-shadow-size 0 $nhsuk-reverse-button-shadow-color;
 	color: $nhsuk-reverse-button-text-color;
@@ -131,9 +158,7 @@ $button-shadow-size: 4px;
 
 	&:active {
 		background: $nhsuk-reverse-button-active-color;
-		box-shadow: none;
 		color: $color_nhsuk-white;
-		top: $button-shadow-size;
 	}
 
 	&:link {
