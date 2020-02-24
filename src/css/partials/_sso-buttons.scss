@@ -1,0 +1,31 @@
+.facebook-sso {
+
+	a, a:hover, a:active, a:focus {
+		color: white !important;
+		background-color: #4267b2 !important;
+		border-radius: 0.3rem !important;
+		box-shadow: none !important;
+		font-weight: bold !important;
+		padding: 1rem;
+		margin: 1rem 0;
+	} 
+	       
+	span.facebook-icon {
+		background-image: url("../images/facebook.png");
+		background-repeat: no-repeat;
+		background-size: auto;
+		background-position: 0 0;
+		display: inline-block;
+		height: 24px;
+		outline: none;
+		overflow: hidden;
+		text-indent: -999px;
+		vertical-align: top;
+		white-space: nowrap;
+		width: 24px;
+	}
+	     
+	span.taglib-text{
+		padding-left: 1rem;
+	}
+}

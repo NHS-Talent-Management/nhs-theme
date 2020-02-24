@@ -1,0 +1,15 @@
+.portlet-registration{
+
+	.registration-sso-options {
+		h3 {
+			text-transform: uppercase;
+			padding-bottom: 1rem;
+		}
+	}
+	
+	@include media-breakpoint-down(md) {
+		.registration-sso-options {
+			text-align: center;
+		}
+	}
+}
