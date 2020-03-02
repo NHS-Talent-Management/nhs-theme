@@ -1,14 +1,21 @@
-.facebook-sso {
+#portlet_com_liferay_login_web_portlet_LoginPortlet .navigation {
+	@include media-breakpoint-down(md) {
+		.taglib-icon-list li {
+			width: 100%;
+			margin-top: 1rem;
+			margin-bottom: 0.5rem;
+		}
+	}
+}
 
-	a, a:hover, a:active, a:focus {
-		color: white !important;
-		background-color: #4267b2 !important;
-		border-radius: 0.3rem !important;
-		box-shadow: none !important;
-		font-weight: bold !important;
-		padding: 1rem;
-		margin: 1rem 0;
-	} 
+a.facebook-sso , a.facebook-sso:hover, a.facebook-sso:active, a.facebook-sso:focus {
+	color: white !important;
+	background-color: $facebook-blue !important;
+	border-radius: 0.3rem !important;
+	box-shadow: none !important;
+	font-weight: bold !important;
+	padding: 1rem;
+	margin: 1rem 0;
 	       
 	span.facebook-icon {
 		background-image: url("../images/facebook.png");
