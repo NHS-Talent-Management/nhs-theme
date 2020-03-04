@@ -27,6 +27,21 @@
 	}
 }
 
+.nhsuk-care-card.white-card {
+	border: 2px solid $nhsuk-link-color;
+	
+	.nhsuk-care-card__heading-container {
+		background-color: unset !important;
+		color: unset !important;
+	    
+	    .nhsuk-care-card__heading .action-icon {
+			.icon-monospaced {
+				color: unset !important;
+			}		
+		}
+	}
+}
+
 .nhsuk-care-card .nhsuk-care-card__heading .action-icon {
 	float: right;
 	
