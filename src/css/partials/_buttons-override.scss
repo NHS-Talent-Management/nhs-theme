@@ -79,6 +79,7 @@ $button-shadow-size: 4px;
 	&:visited,
 	&:not(.disabled):visited
 	&:active,
+	&:visited,
 	&:not(.disabled):active,
 	&:not(:disabled):not(.disabled):active, 
 	&:not(:disabled):not(.disabled).active
@@ -180,10 +181,13 @@ $button-shadow-size: 4px;
 
 .btn-primary--disabled,
 .btn-primary[disabled="disabled"],
-.btn-primary[disabled] {
+.btn-primary[disabled],
+.btn-primary.btn-default.disabled, 
+.btn-primary.btn-default:disabled {
 	background-color: $nhsuk-button-color;
 	opacity: (.5);
 	pointer-events: none;
+	border: 2px solid transparent;
 	
 	&:hover {
 		background-color: $nhsuk-button-color;

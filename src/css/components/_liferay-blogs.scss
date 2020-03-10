@@ -1,0 +1,39 @@
+.portlet-boundary portlet-boundary_com_liferay_blogs_web_portlet_BlogsPortlet_, .portlet-blogs {
+	.portlet-content .portlet-header {
+	
+		.autofit-col.autofit-col-expand {
+			heigth: 0;
+			margin: 0;
+			
+			.portlet-title-text {
+				display: none !important;
+				visibility: hidden !important;
+				margin: 0;
+			}
+		}
+		
+		.autofit-col.autofit-col-end .btn-group .btn-secondary{
+			display: none;
+			visibility: hidden;
+			margin: 0;
+		}
+	}
+	
+	.col-md-8.mx-auto {
+		flex: auto;
+		max-width: 100% !important;
+	}
+	
+	.container-fluid .row .col-md-10.col-md-offset-1.entry-navigation {
+		display: none;
+		visibility: hidden;
+	}
+	
+	#_com_liferay_blogs_web_portlet_BlogsPortlet_related-assets, 
+	#_com_liferay_blogs_web_portlet_BlogsPortlet_configuration, 
+	#_com_liferay_blogs_web_portlet_BlogsPortlet_display-page-template,
+	#_com_liferay_blogs_web_portlet_BlogsPortlet_permissions{
+		display: none !important;
+		visibility: hidden !important;
+	}
+} 
