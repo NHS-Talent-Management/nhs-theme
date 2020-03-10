@@ -1,0 +1,35 @@
+header {
+	.portlet-navigation {
+		.portlet-content .portlet-header {
+			display: none !important;
+			visibility: hidden !important;
+			margin: 0;
+		}
+	}
+	
+	.nhs-sign-in {
+		margin-bottom: 0 !important;
+		line-height: 1;
+	}
+	
+	.nhsuk-header__menu {
+		display: inline-flex;
+	}
+	
+}
+
+.signed-out {
+	header {
+		#toggle-menu {
+			right: 20px !important;
+		}
+	} 
+}
+
+.signed-in {
+	header {
+		#toggle-menu {
+			right: 0px !important;
+		}
+	} 
+}
