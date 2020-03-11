@@ -17,7 +17,7 @@
 				</button>
 				
 				<#if !is_signed_in >
-					<a class="nhsuk-button nhs-sign-in nhs-sign-in-modal" href="${sign_in_url}&redirect=${current_url}">
+					<a class="nhsuk-button nhs-sign-in sign-in" href="${sign_in_url}&redirect=${current_url}">
 						<@liferay.language key="log-in" />
 					</a>
 				</#if>

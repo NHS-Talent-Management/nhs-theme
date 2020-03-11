@@ -1,4 +1,4 @@
-#portlet_com_liferay_login_web_portlet_LoginPortlet .navigation {
+.portlet-login .navigation {
 	@include media-breakpoint-down(md) {
 		.taglib-icon-list li {
 			width: 100%;
