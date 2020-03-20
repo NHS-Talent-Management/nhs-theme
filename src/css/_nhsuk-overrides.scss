@@ -37,6 +37,7 @@
 	    .nhsuk-care-card__heading .action-icon {
 			.icon-monospaced {
 				color: unset !important;
+				vertical-align: middle;
 			}
 			
 			.nhsuk-u-visually-hidden{
@@ -51,9 +52,10 @@
 	
 	.icon-monospaced {
 		color: $white;
+		vertical-align: middle;
 	}		
 	
-	.nhsuk-u-visually-hidden{
+	.nhsuk-u-visually-hidden {
 		color: $white;
 	}
 	
