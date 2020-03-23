@@ -1,0 +1,73 @@
+.search-filter.search-active-filters-container.facet-tags__container {
+
+	.facet-tags {
+		padding-bottom: 5px;
+	
+		.facet-tags__group:nth-child(odd) {
+			background-color: $background-grey;
+		}
+		
+		.facet-tags__group {
+			padding: 5px;
+		
+			.facet-tags__wrapper {
+				vertical-align: middle;
+				margin: 5px 0;
+				display: inline-block;
+			
+				.facet-tags__preposition {
+					display: table-cell;
+					padding: 0 5px 0 2px;
+					vertical-align: middle;
+					text-transform: lowercase;
+					font-size: inherit;
+					font-family: inherit;
+					line-height: inherit;
+					font-weight: normal;
+				}
+	
+				.facet-tag {
+					padding: 8px 7px 7px 23px;
+					display: table-cell;
+					position: relative;
+					border: 1px solid $border-grey;
+					border-radius: 5px;
+					background-color: $background-grey;
+				
+					.facet-tag__text {
+						margin-left: 5px;
+						display: inline-block;
+						font-size: inherit;
+						font-family: inherit;
+						line-height: inherit;
+						font-weight: normal;
+						margin: 0;
+					}
+	
+					.facet-tag__remove {
+						display: inline-block;
+						border: 1px solid transparent;
+						font-size: 16px;
+						line-height: 1.25;
+						position: absolute;
+						top: 0;
+						left: 0;
+						width: 100%;
+						height: 100%;
+						padding: 8px;
+						border-radius: 5px;
+						font-family: "nta", Arial, sans-serif;
+						-webkit-font-smoothing: antialiased;
+						-moz-osx-font-smoothing: grayscale;
+						font-weight: 700;
+						text-align: left;
+						cursor: pointer;
+						color: $black;
+						text-decoration: none;
+						background: none;
+					}
+				}
+			}
+		}
+	}
+}
