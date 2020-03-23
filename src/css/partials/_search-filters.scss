@@ -1,3 +1,25 @@
+.search-results-header{
+	border-bottom: solid 1px $border-grey;
+}
+
+.search-results-container {
+	margin-top: 1.5rem;
+	
+	.search-result-entry {
+		margin-bottom: 20px;
+    	padding-bottom: 30px;
+		border-bottom: 1px solid $border-light-grey;
+    
+		a.entry-button {
+			text-decoration: none;
+		    padding: 0 0.5rem;
+		    border: 1px solid $border-grey;
+		    border-radius: 5px;
+		    float: right;
+		}
+	}
+}
+
 .search-filter.search-active-filters-container.facet-tags__container {
 
 	.facet-tags {
