@@ -14,7 +14,7 @@
 @import 'components/fragment-communitydetails';
 @import 'components/readiness';
 @import 'components/registration';
-@import 'components/user-profile';
+@import 'components/user-settings';
 
 body{
     background-color: $color_nhsuk-grey-5;
@@ -33,6 +33,15 @@ body{
 	.portlet-content .portlet-header .portlet-title-text {
 		display: none;
 		visibility: hidden;
+	}
+}
+
+.portlet-nhs-maximized {
+	.portlet-content {
+		.portlet-icon-back, .portlet-title-text {
+			display: none !important;
+			visibility: hidden !important;
+		}
 	}
 }
 

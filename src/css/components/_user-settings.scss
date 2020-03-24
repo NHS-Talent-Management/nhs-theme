@@ -1,0 +1,21 @@
+.portlet-user-settings {
+
+	ul.list-options {
+		list-style: none;
+		padding: 0;
+
+		li.list-option-entry {
+    		padding-bottom: 0.5rem;
+    		padding-top: 0.5rem;
+    		border-bottom: 1px solid #d8dde0;
+			
+			a {	
+				width: 100%;
+
+				.nhsuk-icon {
+					float: right;
+				}
+			}
+		}
+	}
+}
