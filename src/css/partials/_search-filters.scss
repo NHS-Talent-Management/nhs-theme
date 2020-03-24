@@ -31,7 +31,11 @@
 		
 		.facet-tags__group {
 			padding: 5px;
-		
+			
+			.facet-tags__wrapper:first-of-type .facet-tags__preposition:first-of-type {
+			    font-weight: bold;
+			}
+			
 			.facet-tags__wrapper {
 				vertical-align: middle;
 				margin: 5px 0;
@@ -41,7 +45,6 @@
 					display: table-cell;
 					padding: 0 5px 0 2px;
 					vertical-align: middle;
-					text-transform: lowercase;
 					font-size: inherit;
 					font-family: inherit;
 					line-height: inherit;
