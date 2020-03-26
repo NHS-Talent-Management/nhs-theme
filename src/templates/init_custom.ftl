@@ -1,8 +1,10 @@
 <#assign groupLocalService = serviceLocator.findService("com.liferay.portal.kernel.service.GroupLocalService") />
+<#assign journalArticleLocalService = serviceLocator.findService("com.liferay.journal.service.JournalArticleLocalService") />
 <#assign urlService = serviceLocator.findService("com.placecube.nhs.template.utils.URLService") />
 
 <#assign guest_group = groupLocalService.getGroup(company_id, "Guest") />
 <#assign company_logo = guest_group.getLogoURL(themeDisplay, true) />
+<#assign global_group_id = company.getGroupId() />
 
 <#assign current_url = htmlUtil.escapeURL(theme_display.getURLCurrent()) />
 

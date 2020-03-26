@@ -1,7 +1,7 @@
 <footer role="contentinfo">
-	<div class="nhsuk-footer" id="nhsuk-footer">
-		<div class="nhsuk-width-container">
-			<p class="nhsuk-footer__copyright">&copy; Crown copyright</p>
-		</div>
-	</div>
+	<#attempt>
+		<#assign footerNHSSection = journalArticleLocalService.getArticleContent(global_group_id, "FOOTER", "VIEW", language_id , theme_display) />
+		${footerNHSSection}
+	<#recover>
+	</#attempt>
 </footer>
