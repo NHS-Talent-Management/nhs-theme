@@ -1,7 +1,7 @@
 {
 	"name": "nhs-theme",
 	"groupId": "com.placecube.nhs",
-	"version": "1.14.0",
+	"version": "1.15.0",
 	"main": "package.json",
 	"keywords": [
 		"liferay-theme"
