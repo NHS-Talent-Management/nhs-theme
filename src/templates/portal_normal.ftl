@@ -25,6 +25,11 @@
 			
 			<#include "${full_templates_path}/header.ftl" />
 			
+			<@liferay_portlet["runtime"]
+				instanceId="HEADER_ANNOUNCEMENT_BANNER"
+				portletName="com_placecube_nhs_announcements_banner_web_AnnouncementsBannerPortlet"
+			/>
+
 			<section class="nhsuk-width-container" id="content">
 				<h2 class="sr-only" role="heading" aria-level="1">${the_title}</h2>
 		
