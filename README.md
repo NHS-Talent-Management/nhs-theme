@@ -1,8 +1,8 @@
 # README #
 
-##NHS-THEME
+## NHS-THEME
 
-###Supported versions
+### Supported versions
 
 Liferay 7.2 SP1 + Fix Pack 4
 
